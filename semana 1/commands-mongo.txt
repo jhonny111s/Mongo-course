@@ -1,0 +1,34 @@
+Todos los comandos son validos desde la consola
+
+// Inicializa el servidor de mongo
+mongod
+
+// Abre la shell para interactuar con mongo
+mongo
+
+// Muestra las base de datos existentes
+shows dbs
+
+// Ingresa a una base de datos indicada
+use <db_name>
+
+// Muestra las colecciones (tablas) de la base de datos en que nos encontramos
+show collections
+
+// Exporta el contenido de una base de datos
+mongodump --db <db_name>
+
+// Importa un dump creado con mongodump
+mongorestore <dump>
+
+// Mustra los registros de una collección estando dentro de la DB
+db.<collection_name>.find()
+
+// inserta un o varios registro en una collección
+db.<collection_name>.insert(<array>)
+
+// Muestra los comandos mas frecuentes de mongo
+help
+
+// Muestra todos los metodos que provee mongo
+db.help()

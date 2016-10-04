@@ -1,11 +1,13 @@
-
+# Importa las librerias necesarias de mongo
 import pymongo
 
 from pymongo import MongoClient
 
 
-# Conexion a la base de datos
+# Inicializa host y puerto de la Conexion
 connection = MongoClient('localhost', 27017)
+
+# Conexion a la base de datos llamada test
 db = connection.test
 
 # Nombre de la coleccion con la que vamos a trabajar
